@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val repository =FactsRepository(FactsApi())
+     /*   val repository =FactsRepository(FactsApi())
         GlobalScope.launch (Dispatchers.Main ){
             val fact =repository.getFacts()
 
             Toast.makeText(this@MainActivity,fact.toString(),Toast.LENGTH_LONG).show()
             Log.e("RES----",fact.toString())
-        }
+        }*/
     }
 }

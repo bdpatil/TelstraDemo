@@ -1,4 +1,4 @@
-package net.simplifiedcoding.util
+package com.example.telstrademo.utils
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
