@@ -36,9 +36,9 @@ class FactsFragment : Fragment(){
         factory = FactsViewModelFactory(repository)
         viewModel = ViewModelProviders.of(this, factory).get(FactsViewModel::class.java)
 
-        viewModel.getMovies()
+        viewModel.getFactsData()
 
-        viewModel.movies.observe(viewLifecycleOwner, Observer { movies ->
+        viewModel.facts.observe(viewLifecycleOwner, Observer { movies ->
             recycler_view_movies.also {
                 it.layoutManager = LinearLayoutManager(requireContext())
                 it.setHasFixedSize(true)

@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.telstrademo.R
 import com.example.telstrademo.data.models.Facts
-import com.example.telstrademo.databinding.RecyclerviewMovieBinding
+import com.example.telstrademo.databinding.RecyclerviewFactsBinding
 
 class FactsAdapter (
     private val facts: List<Facts>
@@ -25,7 +25,7 @@ class FactsAdapter (
         )
 
     override fun onBindViewHolder(holder: FactsViewHolder, position: Int) {
-   /*     holder.recyclerviewMovieBinding.movie = facts[position]
+     /*   holder.recyclerviewMovieBinding.movie = facts[position]
         holder.recyclerviewMovieBinding.buttonBook.setOnClickListener {
             listener.onRecyclerViewItemClick(holder.recyclerviewMovieBinding.buttonBook, facts[position])
         }
@@ -36,7 +36,7 @@ class FactsAdapter (
 
 
     inner class FactsViewHolder(
-        val recyclerviewMovieBinding: RecyclerviewMovieBinding
+        val recyclerviewMovieBinding: RecyclerviewFactsBinding
     ) : RecyclerView.ViewHolder(recyclerviewMovieBinding.root)
 
 }
